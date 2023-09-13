@@ -52,3 +52,9 @@ void error_handling(char *message){
     fputc('\n',stderr);
     exit(1);
 }
+
+void error_handling(char *message){
+    fputs(message,stderr);
+    fputc('\n',stderr);
+    exit(1);
+}
